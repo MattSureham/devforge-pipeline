@@ -245,7 +245,7 @@ class PMAgent:
         requirements.append({
             "category": "Frontend",
             "requirement": "Responsive web interface",
-            "technologies": ["React", "Vue", or "Angular"],
+            "technologies": ["React", "Vue", "Angular"],
             "priority": "high"
         })
         
@@ -253,7 +253,7 @@ class PMAgent:
         requirements.append({
             "category": "Backend",
             "requirement": "RESTful API",
-            "technologies": ["Node.js/Express", "Python/FastAPI", or "Go"],
+            "technologies": ["Node.js/Express", "Python/FastAPI", "Go"],
             "priority": "high"
         })
         
@@ -261,7 +261,7 @@ class PMAgent:
         requirements.append({
             "category": "Database",
             "requirement": "Persistent data storage",
-            "technologies": ["PostgreSQL", "MongoDB", or "SQLite"],
+            "technologies": ["PostgreSQL", "MongoDB", "SQLite"],
             "priority": "high"
         })
         
@@ -410,7 +410,7 @@ class PMAgent:
         
         readme += "\n## User Stories\n\n"
         for story in data['user_stories'][:4]:  # Show MVP stories
-            readme += f"### {story['id']} ({story['priority'].upper()})")
+            readme += f"### {story['id']} ({story['priority'].upper()})\n"
             readme += f"\n**{story['role']},** {story['action']}\n"
             readme += f"*{story['benefit']}*\n\n"
             readme += f"**Story Points:** {story['story_points']}\n\n"
